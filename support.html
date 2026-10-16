@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="dark">
+    <meta name="theme-color" content="#0B0A10">
+    <meta name="description" content="Hilfe und Kontakt zur App OZ LED: Scheinwerfer-Licht.">
+    <title>OZ LED – Hilfe &amp; Kontakt</title>
+    <style>
+        :root {
+            color-scheme: dark;
+            --background: #0B0A10;
+            --surface: rgba(28, 25, 38, 0.86);
+            --text: #F3F1F8;
+            --muted: #B4AEC4;
+            --accent: #8A5CFF;
+            --accent-text: #B79CFF;
+            --line: rgba(243, 241, 248, 0.10);
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            background:
+                radial-gradient(120% 60% at 50% -10%, rgba(138, 92, 255, 0.22), transparent 60%),
+                var(--background);
+            background-attachment: fixed;
+            color: var(--text);
+            font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+        }
+
+        main {
+            width: min(760px, calc(100% - 32px));
+            margin: 0 auto;
+            padding: 48px 0 72px;
+        }
+
+        header, section {
+            padding: clamp(24px, 5vw, 44px);
+            background: var(--surface);
+            border: 1px solid var(--line);
+            border-radius: 24px;
+        }
+
+        header { border-top: 2px solid var(--accent); }
+        section { margin-top: 18px; }
+        h1 { margin: 0; font-size: clamp(2rem, 6vw, 3.2rem); line-height: 1.08; letter-spacing: -0.01em; }
+        h2 { margin: 0 0 20px; font-size: 1.6rem; }
+        h3 { margin: 28px 0 6px; font-size: 1.08rem; }
+        p { margin: 8px 0 0; }
+        .subtitle, .updated { color: var(--muted); }
+        .subtitle { font-size: 1.08rem; }
+        .updated { margin-top: 20px; font-size: 0.9rem; }
+        nav { display: flex; flex-wrap: wrap; gap: 10px 18px; margin-top: 28px; }
+        a { color: var(--accent-text); text-underline-offset: 3px; }
+        a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+        address { margin-top: 8px; font-style: normal; }
+        ul, ol { padding-left: 1.3rem; margin: 8px 0 0; }
+        li { margin-top: 4px; }
+        em { font-style: normal; color: var(--accent-text); }
+        .language-note { color: var(--muted); font-size: 0.94rem; }
+        .notice {
+            margin-top: 16px;
+            padding: 14px 18px;
+            border-left: 3px solid var(--accent);
+            background: rgba(138, 92, 255, 0.10);
+            border-radius: 0 12px 12px 0;
+        }
+        footer { padding: 28px 8px 0; color: var(--muted); text-align: center; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+<main>
+    <header>
+        <h1>Hilfe</h1>
+        <p class="subtitle">OZ LED – Scheinwerfer-Licht</p>
+        <nav aria-label="Seitennavigation">
+            <a href="#kontakt">Kontakt</a>
+            <a href="#fragen">Häufige Fragen</a>
+            <a href="#help">Help (English)</a>
+            <a href="index.html">Datenschutz &amp; Impressum</a>
+        </nav>
+        <p class="updated">Stand: 16. Oktober 2026</p>
+    </header>
+
+    <section id="kontakt" lang="de">
+        <h2>Kontakt</h2>
+        <p>Fragen, Fehler, Wünsche: schreib einfach eine E-Mail. Es antwortet eine
+            Person, keine Warteschlange, und darum kann es ein paar Tage dauern.</p>
+        <address>
+            E-Mail: help.vaya (at) web (punkt) de<br>
+            Betreff bitte mit „OZ LED“ beginnen.
+        </address>
+        <p>Hilfreich in der Nachricht, aber kein Muss: welches iPhone, welche
+            iOS-Version, welche Steuerbox und welche Relais, und was du erwartet
+            hättest.</p>
+
+        <p class="notice"><strong>RGB-Licht nur auf Privatgelände.</strong> Farbiges
+            oder animiertes Licht nach vorn ist im öffentlichen Straßenverkehr in
+            Deutschland und vielen anderen Ländern nicht erlaubt. Für die Straße und
+            für Prüfungen gibt es den Stock-Modus.</p>
+    </section>
+
+    <section id="fragen" lang="de">
+        <h2>Häufige Fragen</h2>
+
+        <h3>Welche Hardware brauche ich?</h3>
+        <p>Nachgerüstete RGB-Lichtleiter in den Scheinwerfern mit einer
+            Bluetooth-LE-Steuerbox der LEDCAR-Bauart. Eine Steuerbox steuert beide
+            Seiten im Gleichlauf. Für den Stock-Modus kommen ein oder zwei
+            Bluetooth-LE-Relais dazu, die die Lichtleiter stromlos schalten. Ohne
+            Steuerbox kannst du alles im Demo-Modus ausprobieren.</p>
+
+        <h3>Was ist der Demo-Modus?</h3>
+        <p>Ein simuliertes Auto mit allen Funktionen: Farben, Effekte, Szenen,
+            Begrüßung, Stock-Modus und OZ Musik. Du startest ihn bei der Einrichtung
+            über <em>Demo starten</em> oder später unter <em>Mehr → Demo-Modus</em>.
+            Im Demo-Modus sendet die App nichts per Bluetooth.</p>
+
+        <h3>Warum fragt OZ LED nach Bluetooth?</h3>
+        <p>Weil die Steuerbox und die Relais nur per Bluetooth erreichbar sind. Die
+            App sendet darüber Steuerbefehle wie Farbe, Helligkeit und Effekt, sonst
+            nichts. Im Hintergrund nutzt sie Bluetooth nur, um sich beim Einschalten
+            der Zündung von selbst wieder zu verbinden. Hast du die Erlaubnis
+            abgelehnt: iOS-<em>Einstellungen → Apps → OZ LED → Bluetooth</em>
+            einschalten.</p>
+
+        <h3>Was macht der Stock-Modus (für TÜV und Straße)?</h3>
+        <p>Ein Tipp schaltet über die Bluetooth-Relais die Lichtleiter stromlos, und
+            das Original-Tagfahrlicht deines Autos arbeitet wie ab Werk. OZ LED
+            bestätigt den Wechsel erst, wenn es selbst sieht, dass die Steuerbox nicht
+            mehr erreichbar ist. Solange der Stock-Modus aktiv ist, sind alle
+            Lichtfunktionen gesperrt, auch über Siri. Zu finden unter
+            <em>Mehr → Geräte</em> beziehungsweise über den Hinweis oben im
+            Bildschirm. Die App ersetzt keine Prüfung: Ob dein Umbau zulässig ist,
+            entscheiden die Prüfstelle und die geltenden Vorschriften.</p>
+
+        <h3>Wie benutze ich Siri und das Kontrollzentrum?</h3>
+        <p>Sag zum Beispiel <em>„OZ Licht an“</em>, <em>„OZ Licht aus“</em>,
+            <em>„OZ Polarlicht abspielen“</em> oder <em>„OZ Stock-Modus“</em>. Alle
+            Befehle findest du auch in der Kurzbefehle-App. Für das Kontrollzentrum
+            hältst du es gedrückt, tippst auf <em>Steuerelement hinzufügen</em> und
+            wählst OZ LED. Ist die Steuerbox nicht verbunden, sagt Siri das, statt
+            still nichts zu tun.</p>
+
+        <h3>Was hört OZ Musik mit?</h3>
+        <p>OZ Musik lässt das Licht im Takt spielen. Dafür misst die App über das
+            Mikrofon deines iPhones Lautstärke und Takt, nur solange OZ Musik läuft
+            und die App offen ist. Es wird nichts aufgenommen, gespeichert oder
+            gesendet. Die Mikrofon-Erlaubnis wird erst beim ersten Start von OZ Musik
+            erfragt, und alles andere funktioniert auch ohne sie.</p>
+
+        <h3>Darf ich mit Farben fahren?</h3>
+        <p>In Deutschland nein, und in vielen anderen Ländern auch nicht. Nach vorn
+            ist im Straßenverkehr nur das zugelassene Licht erlaubt. Farben,
+            Effekte, Begrüßung und OZ Musik sind für Privatgelände und Treffen
+            gedacht. Auf der Straße: Stock-Modus. Bediene die App nicht während der
+            Fahrt.</p>
+
+        <h3>„Steuerbox nicht gefunden“: was tun?</h3>
+        <ol>
+            <li>Zündung einschalten. Die Steuerbox bekommt meist nur dann Strom.</li>
+            <li>Die App des Herstellers der Steuerbox ganz schließen (aus der
+                App-Übersicht wischen). Die Box nimmt nur eine Verbindung gleichzeitig
+                an.</li>
+            <li>Prüfen, dass der Stock-Modus nicht aktiv ist. Dann ist die Box
+                absichtlich stromlos.</li>
+            <li>Bluetooth am iPhone an und für OZ LED erlaubt?</li>
+            <li>Mit dem iPhone näher an die Front gehen und <em>Nochmal suchen</em>
+                tippen.</li>
+            <li>Hilft das nicht: unter <em>Mehr → Geräte → Neu verbinden</em> die Box
+                neu einrichten. Bleibt sie unsichtbar, Stecker und Sicherung der
+                Steuerbox prüfen.</li>
+        </ol>
+
+        <h3>Wo sind meine Daten?</h3>
+        <p>Auf deinem iPhone. OZ LED hat kein Konto, keinen Server und keine
+            Analyse. Szenen und Einstellungen liegen lokal und werden beim Löschen der
+            App mitgelöscht. Details stehen in der
+            <a href="index.html#datenschutz">Datenschutzerklärung</a>.</p>
+    </section>
+
+    <section id="help" lang="en">
+        <h2>Help</h2>
+        <p class="language-note">This English version is provided for users of the
+            English app localization.</p>
+
+        <h3>Contact</h3>
+        <p>Questions, bugs, requests: just send an email. One person answers, not
+            a queue, so it can take a few days.</p>
+        <address>
+            Email: help.vaya (at) web (dot) de<br>
+            Please start the subject with “OZ LED”.
+        </address>
+        <p>Useful but not required: which iPhone, which iOS version, which
+            controller box and relays, and what you expected to happen.</p>
+
+        <p class="notice"><strong>RGB light on private property only.</strong>
+            Colored or animated forward-facing light is not allowed on public roads in
+            Germany and many other countries. Use stock mode for the road and for
+            inspections.</p>
+
+        <h3>Which hardware do I need?</h3>
+        <p>Retrofitted RGB light guides in the headlights with an LEDCAR-type
+            Bluetooth LE controller box. One controller drives both sides in sync. For
+            stock mode, add one or two Bluetooth LE relays that cut power to the light
+            guides. Without a controller you can try everything in demo mode.</p>
+
+        <h3>What is demo mode?</h3>
+        <p>A simulated car with every feature: colors, effects, scenes, welcome
+            animations, stock mode and OZ Musik. Start it during setup with <em>Demo
+            starten</em> (Start demo) or later under <em>Mehr → Demo-Modus</em>
+            (More → Demo mode). In demo mode the app sends nothing over Bluetooth.</p>
+
+        <h3>Why does OZ LED ask for Bluetooth?</h3>
+        <p>The controller box and relays can only be reached over Bluetooth. The app
+            sends control commands such as color, brightness and effect, nothing else.
+            In the background it uses Bluetooth only to reconnect when the ignition is
+            switched on. If you declined: iOS <em>Settings → Apps → OZ LED →
+            Bluetooth</em>.</p>
+
+        <h3>What does stock mode do (for inspections and the road)?</h3>
+        <p>One tap uses the Bluetooth relays to cut power to the light guides, so your
+            car’s original daytime running lights work as from the factory. OZ LED
+            only confirms the switch once it can see that the controller is no longer
+            reachable. While stock mode is active, all light features are locked,
+            including Siri. Find it under <em>More → Devices</em> or via the notice at
+            the top of the screen. The app does not replace an inspection: whether your
+            modification is permitted is decided by the inspection body and local
+            regulations.</p>
+
+        <h3>How do I use Siri and Control Center?</h3>
+        <p>Say for example <em>“OZ Licht an”</em> (light on), <em>“OZ Licht
+            aus”</em> (light off), <em>“OZ Polarlicht abspielen”</em> (play a scene)
+            or <em>“OZ Stock-Modus”</em>. All commands are also in the Shortcuts app.
+            For Control Center, touch and hold it, tap <em>Add a Control</em> and
+            choose OZ LED. If the controller is not connected, Siri tells you instead
+            of silently doing nothing.</p>
+
+        <h3>What does OZ Musik listen to?</h3>
+        <p>OZ Musik makes the light play to the beat. To do this, the app measures
+            loudness and beat through your iPhone’s microphone, only while OZ Musik is
+            running and the app is open. Nothing is recorded, stored or sent. Microphone
+            permission is requested the first time you start OZ Musik, and everything
+            else works without it.</p>
+
+        <h3>May I drive with colors on?</h3>
+        <p>Not in Germany, and not in many other countries either. Only approved
+            lighting is allowed to the front on public roads. Colors, effects, welcome
+            animations and OZ Musik are meant for private property and meets. On the
+            road: stock mode. Do not operate the app while driving.</p>
+
+        <h3>“Controller not found”: what now?</h3>
+        <ol>
+            <li>Switch the ignition on. The controller usually only has power then.</li>
+            <li>Fully close the controller manufacturer’s own app (swipe it away in the
+                app switcher). The box accepts only one connection at a time.</li>
+            <li>Check that stock mode is not active. In that case the box is
+                deliberately without power.</li>
+            <li>Is Bluetooth on and allowed for OZ LED?</li>
+            <li>Move closer to the front of the car and tap <em>Nochmal suchen</em>
+                (Search again).</li>
+            <li>Still nothing: set the box up again under <em>More → Devices →
+                Reconnect</em>. If it stays invisible, check the controller’s plug and
+                fuse.</li>
+        </ol>
+
+        <h3>Where is my data?</h3>
+        <p>On your iPhone. OZ LED has no account, no server and no analytics. Scenes
+            and settings are stored locally and deleted together with the app. Details
+            are in the <a href="index.html#privacy">privacy policy</a>.</p>
+    </section>
+
+    <footer>OZ LED · Scheinwerfer-Licht · <a href="index.html">Datenschutz &amp; Impressum</a></footer>
+</main>
+</body>
+</html>

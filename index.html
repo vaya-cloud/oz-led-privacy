@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="dark">
+    <meta name="theme-color" content="#0B0A10">
+    <meta name="description" content="Datenschutzerklärung und Impressum der App OZ LED: Scheinwerfer-Licht.">
+    <title>OZ LED – Datenschutz &amp; Impressum</title>
+    <style>
+        :root {
+            color-scheme: dark;
+            --background: #0B0A10;
+            --surface: rgba(28, 25, 38, 0.86);
+            --text: #F3F1F8;
+            --muted: #B4AEC4;
+            --accent: #8A5CFF;
+            --accent-text: #B79CFF;
+            --line: rgba(243, 241, 248, 0.10);
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            background:
+                radial-gradient(120% 60% at 50% -10%, rgba(138, 92, 255, 0.22), transparent 60%),
+                var(--background);
+            background-attachment: fixed;
+            color: var(--text);
+            font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+        }
+
+        main {
+            width: min(760px, calc(100% - 32px));
+            margin: 0 auto;
+            padding: 48px 0 72px;
+        }
+
+        header, section {
+            padding: clamp(24px, 5vw, 44px);
+            background: var(--surface);
+            border: 1px solid var(--line);
+            border-radius: 24px;
+        }
+
+        header { border-top: 2px solid var(--accent); }
+        section { margin-top: 18px; }
+        h1 { margin: 0; font-size: clamp(2rem, 6vw, 3.2rem); line-height: 1.08; letter-spacing: -0.01em; }
+        h1 span { color: var(--accent-text); }
+        h2 { margin: 0 0 20px; font-size: 1.6rem; }
+        h3 { margin: 28px 0 6px; font-size: 1.08rem; }
+        p { margin: 8px 0 0; }
+        .subtitle, .updated { color: var(--muted); }
+        .subtitle { font-size: 1.08rem; }
+        .updated { margin-top: 20px; font-size: 0.9rem; }
+        nav { display: flex; flex-wrap: wrap; gap: 10px 18px; margin-top: 28px; }
+        a { color: var(--accent-text); text-underline-offset: 3px; }
+        a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+        address { margin-top: 8px; font-style: normal; }
+        ul { padding-left: 1.3rem; margin: 8px 0 0; }
+        li { margin-top: 4px; }
+        .language-note { color: var(--muted); font-size: 0.94rem; }
+        .notice {
+            margin-top: 16px;
+            padding: 14px 18px;
+            border-left: 3px solid var(--accent);
+            background: rgba(138, 92, 255, 0.10);
+            border-radius: 0 12px 12px 0;
+        }
+        footer { padding: 28px 8px 0; color: var(--muted); text-align: center; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+<main>
+    <header>
+        <h1>OZ <span>LED</span></h1>
+        <p class="subtitle">Scheinwerfer-Licht</p>
+        <nav aria-label="Seitennavigation">
+            <a href="#datenschutz">Datenschutz</a>
+            <a href="#impressum">Impressum</a>
+            <a href="#privacy">Privacy</a>
+            <a href="#legal-notice">Legal notice</a>
+            <a href="support.html">Hilfe / Help</a>
+        </nav>
+        <p class="updated">Stand: 16. Oktober 2026</p>
+    </header>
+
+    <section id="datenschutz" lang="de">
+        <h2>Datenschutzerklärung</h2>
+
+        <h3>1. Verantwortlicher</h3>
+        <address>
+            Denis Liebscher<br>
+            Hamburger Str. 17<br>
+            04129 Leipzig<br>
+            Deutschland<br>
+            E-Mail: help.vaya (at) web (punkt) de
+        </address>
+
+        <h3>2. Kurz gesagt</h3>
+        <p>OZ LED erhebt keine personenbezogenen Daten. Die App hat kein Benutzerkonto, keinen eigenen Server und enthält keinen Code, der Daten über das Internet sendet. Sie verwendet keine Werbung, keine Analyse- und keine Trackingdienste und keine Bibliotheken von Drittanbietern.</p>
+
+        <h3>3. Daten auf deinem Gerät</h3>
+        <p>Deine gespeicherten Szenen, Farbfolgen und Einstellungen sowie die Kennung deiner gekoppelten Steuerbox und Relais speichert OZ LED lokal auf deinem iPhone (SwiftData und Benutzereinstellungen). Damit das Steuerelement im Kontrollzentrum und die Kurzbefehle denselben Stand sehen wie die App, liegen diese Daten in einem geschützten Gerätebereich, den nur OZ LED und seine eigene Erweiterung nutzen (App Group). Sie verlassen das Gerät dabei nicht. Wenn du die App löschst, werden diese Daten mitgelöscht.</p>
+        <p>Ob diese Daten in Gerätebackups (iCloud oder Computer) enthalten sind, bestimmen deine Backup-Einstellungen von iOS. Der Anbieter von OZ LED hat darauf keinen Zugriff.</p>
+
+        <h3>4. Bluetooth</h3>
+        <p>OZ LED nutzt Bluetooth Low Energy ausschließlich, um sich mit deiner eigenen LED-Steuerbox in den Scheinwerfern und, falls vorhanden, mit deinen Bluetooth-Relais für den Stock-Modus zu verbinden. Über diese Verbindung werden nur Steuerbefehle gesendet (zum Beispiel Farbe, Helligkeit, Effekt, Ein/Aus) und Verbindungszustände gelesen. Bei der Suche nach deiner Steuerbox empfängt das iPhone die Funksignale Bluetooth-fähiger Geräte in der Nähe; OZ LED wertet davon nur die passenden Geräte aus und speichert oder überträgt keine fremden Gerätedaten. Damit sich die App beim Einschalten der Zündung von selbst wieder verbinden kann, darf sie Bluetooth auch im Hintergrund nutzen. Die Bluetooth-Erlaubnis kannst du jederzeit in den iOS-Einstellungen ändern; ohne sie kannst du OZ LED im Demo-Modus ausprobieren.</p>
+
+        <h3>5. Mikrofon (OZ Musik)</h3>
+        <p>Nur wenn du die optionale Funktion „OZ Musik“ startest, fragt OZ LED nach dem Zugriff auf das Mikrofon. Solange OZ Musik läuft und die App im Vordergrund ist, misst OZ LED fortlaufend Lautstärke und Takt der Musik, damit das Licht im Rhythmus spielt. Das geschieht ausschließlich im Arbeitsspeicher deines iPhones: Es wird nichts aufgenommen, nichts gespeichert und nichts gesendet, und Sprache wird nicht erkannt oder ausgewertet. Beim Beenden von OZ Musik oder beim Wechsel der App in den Hintergrund endet der Zugriff. Die Erlaubnis kannst du jederzeit in den iOS-Einstellungen widerrufen; alle anderen Funktionen bleiben nutzbar.</p>
+
+        <h3>6. Siri, Kurzbefehle und Kontrollzentrum</h3>
+        <p>Die Befehle für Siri und die Kurzbefehle-App sowie das Steuerelement im Kontrollzentrum werden über Apples Systemfunktionen (App Intents) auf deinem Gerät ausgeführt und an die App weitergegeben, die dann deine Steuerbox per Bluetooth schaltet. OZ LED selbst sendet dabei nichts an den Anbieter oder an Dritte. Für die Verarbeitung von Sprachbefehlen durch Siri gelten die Datenschutzbestimmungen von Apple.</p>
+
+        <h3>7. App Store</h3>
+        <p>OZ LED wird über den App Store von Apple vertrieben. Für Download, Updates und gegebenenfalls von Apple bereitgestellte, anonymisierte Statistiken ist Apple verantwortlich; es gelten die Datenschutzbestimmungen von Apple. Der Anbieter erhält darüber keine Daten, die dich persönlich identifizieren.</p>
+
+        <h3>8. Kontakt per E-Mail</h3>
+        <p>Wenn du uns eine E-Mail sendest, verarbeiten wir deine E-Mail-Adresse und die von dir mitgeteilten Inhalte, um deine Anfrage zu beantworten. Rechtsgrundlage ist Art. 6 Abs. 1 Buchst. b DSGVO, soweit die Nachricht eine Vertrags- oder vorvertragliche Angelegenheit betrifft, andernfalls Art. 6 Abs. 1 Buchst. f DSGVO. Unser berechtigtes Interesse ist die Bearbeitung deiner Nachricht. Die Daten werden gelöscht, sobald sie für die Bearbeitung nicht mehr erforderlich sind und keine gesetzlichen Aufbewahrungspflichten entgegenstehen.</p>
+
+        <h3>9. Bereitstellung dieser Website</h3>
+        <p>Diese Seite wird über GitHub Pages bereitgestellt. GitHub protokolliert beim Aufruf einer Pages-Website insbesondere die IP-Adresse zu Sicherheitszwecken. Weitere Informationen enthält die <a href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement">Datenschutzerklärung von GitHub</a>. Diese Seite bindet selbst keine Analysewerkzeuge, Werbung, externen Schriftarten oder eigenen Cookies ein.</p>
+
+        <h3>10. Deine Rechte</h3>
+        <p>Soweit wir personenbezogene Daten von dir verarbeiten, hast du nach Maßgabe der DSGVO insbesondere Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch. Eine erteilte Einwilligung kannst du jederzeit mit Wirkung für die Zukunft widerrufen. Du hast außerdem das Recht, dich bei einer Datenschutzaufsichtsbehörde zu beschweren. Für einen in Sachsen ansässigen Verantwortlichen ist grundsätzlich die <a href="https://www.datenschutz.sachsen.de/beschwerde-einreichen.html">Sächsische Datenschutz- und Transparenzbeauftragte</a> zuständig.</p>
+
+        <h3>11. Änderungen</h3>
+        <p>Wenn sich die App so ändert, dass diese Erklärung nicht mehr stimmt, passen wir sie an. Maßgeblich ist die Fassung mit dem oben genannten Stand.</p>
+    </section>
+
+    <section id="impressum" lang="de">
+        <h2>Impressum</h2>
+        <p>Angaben gemäß § 5 Digitale-Dienste-Gesetz (DDG):</p>
+        <address>
+            Denis Liebscher<br>
+            Hamburger Str. 17<br>
+            04129 Leipzig<br>
+            Deutschland<br>
+            E-Mail: help.vaya (at) web (punkt) de
+        </address>
+
+        <h3>Hinweis zur App</h3>
+        <p>OZ LED steuert nachgerüstete RGB-Lichtleiter über eine Bluetooth-Steuerbox. Die App ist kein Produkt eines Fahrzeugherstellers und steht mit keinem Fahrzeughersteller in Verbindung.</p>
+        <p class="notice"><strong>RGB-Licht nur auf Privatgelände.</strong> Farbiges oder animiertes Licht nach vorn ist im öffentlichen Straßenverkehr in Deutschland und vielen anderen Ländern nicht zulässig. Nutze Farben und Effekte nur auf Privatgelände oder bei Veranstaltungen und schalte für die Straße und für Prüfungen auf den Stock-Modus. Für den Einbau und den Betrieb der Beleuchtung bist du selbst verantwortlich.</p>
+    </section>
+
+    <section id="privacy" lang="en">
+        <h2>Privacy policy</h2>
+        <p class="language-note">This English version is provided for users of the English app localization.</p>
+
+        <h3>1. Controller</h3>
+        <address>
+            Denis Liebscher<br>
+            Hamburger Str. 17<br>
+            04129 Leipzig<br>
+            Germany<br>
+            Email: help.vaya (at) web (dot) de
+        </address>
+
+        <h3>2. In short</h3>
+        <p>OZ LED does not collect personal data. The app has no account and no server of its own, and it contains no code that sends data over the internet. It uses no advertising, analytics or tracking services and no third-party libraries.</p>
+
+        <h3>3. Data on your device</h3>
+        <p>OZ LED stores your saved scenes, color sequences and settings, as well as the identifier of your paired controller box and relays, locally on your iPhone (SwiftData and user defaults). So that the Control Center control and Shortcuts see the same state as the app, this data lives in a protected on-device container used only by OZ LED and its own extension (App Group). It does not leave the device. Deleting the app deletes this data.</p>
+        <p>Whether this data is included in device backups (iCloud or computer) depends on your iOS backup settings. The provider of OZ LED has no access to it.</p>
+
+        <h3>4. Bluetooth</h3>
+        <p>OZ LED uses Bluetooth Low Energy only to connect to your own LED controller box in the headlights and, if present, to your Bluetooth relays for stock mode. Over this connection the app only sends control commands (for example color, brightness, effect, on/off) and reads connection states. While searching for your controller, the iPhone receives the radio signals of nearby Bluetooth devices; OZ LED only evaluates matching devices and does not store or transmit data about other devices. So that the app can reconnect by itself when the ignition is switched on, it may use Bluetooth in the background. You can change Bluetooth permission in iOS Settings at any time; without it you can try OZ LED in demo mode.</p>
+
+        <h3>5. Microphone (OZ Musik)</h3>
+        <p>OZ LED asks for microphone access only when you start the optional “OZ Musik” feature. While OZ Musik is running and the app is in the foreground, OZ LED continuously measures the loudness and beat of the music so the light plays in rhythm. This happens in your iPhone’s memory only: nothing is recorded, stored or sent, and speech is not recognized or analysed. Access ends when you stop OZ Musik or the app moves to the background. You can revoke the permission in iOS Settings at any time; all other features remain available.</p>
+
+        <h3>6. Siri, Shortcuts and Control Center</h3>
+        <p>Siri and Shortcuts commands and the Control Center control run on your device through Apple’s system features (App Intents) and are passed to the app, which then switches your controller over Bluetooth. OZ LED itself sends nothing to its provider or to third parties. Apple’s privacy terms apply to how Siri processes voice requests.</p>
+
+        <h3>7. App Store</h3>
+        <p>OZ LED is distributed through Apple’s App Store. Apple is responsible for downloads, updates and any anonymized statistics it provides; Apple’s privacy terms apply. The provider receives no data from this that identifies you personally.</p>
+
+        <h3>8. Contact by email</h3>
+        <p>If you email us, we process your email address and the information you provide to respond. The legal basis is Article 6(1)(b) GDPR where your message concerns contractual or pre-contractual matters, and otherwise Article 6(1)(f) GDPR. Our legitimate interest is responding to your message. We delete the data when it is no longer required for this purpose and no statutory retention obligation applies.</p>
+
+        <h3>9. Delivery of this website</h3>
+        <p>This page is hosted through GitHub Pages. When a Pages site is visited, GitHub logs information including the visitor’s IP address for security purposes. For details, see the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>. This page itself includes no analytics, advertising, external fonts or first-party cookies.</p>
+
+        <h3>10. Your rights</h3>
+        <p>Where we process your personal data, the GDPR may give you rights including access, correction, erasure, restriction, data portability and objection. You may withdraw consent at any time with effect for the future. You also have the right to lodge a complaint with a data protection authority. For a controller based in Saxony, the competent authority is generally the <a href="https://www.datenschutz.sachsen.de/beschwerde-einreichen.html">Saxon Data Protection and Transparency Commissioner</a>.</p>
+
+        <h3>11. Changes</h3>
+        <p>If the app changes in a way that makes this policy inaccurate, we will update it. The version with the date shown above applies.</p>
+    </section>
+
+    <section id="legal-notice" lang="en">
+        <h2>Legal notice</h2>
+        <address>
+            Denis Liebscher<br>
+            Hamburger Str. 17<br>
+            04129 Leipzig<br>
+            Germany<br>
+            Email: help.vaya (at) web (dot) de
+        </address>
+
+        <h3>About the app</h3>
+        <p>OZ LED controls retrofitted RGB light guides through a Bluetooth controller box. The app is not a product of, and is not affiliated with, any vehicle manufacturer.</p>
+        <p class="notice"><strong>RGB light on private property only.</strong> Colored or animated forward-facing light is not permitted on public roads in Germany and many other countries. Use colors and effects only on private property or at events, and switch to stock mode for road use and inspections. You are responsible for installing and operating the lighting.</p>
+    </section>
+
+    <footer>OZ LED · Scheinwerfer-Licht · <a href="support.html">Hilfe / Help</a></footer>
+</main>
+</body>
+</html>
