@@ -82,7 +82,7 @@
             <a href="#help">Help (English)</a>
             <a href="index.html">Datenschutz &amp; Impressum</a>
         </nav>
-        <p class="updated">Stand: 16. Oktober 2026</p>
+        <p class="updated">Stand: 20. Oktober 2026</p>
     </header>
 
     <section id="kontakt" lang="de">
@@ -94,85 +94,121 @@
             Betreff bitte mit „OZ LED“ beginnen.
         </address>
         <p>Hilfreich in der Nachricht, aber kein Muss: welches iPhone, welche
-            iOS-Version, welche Steuerbox und welche Relais, und was du erwartet
+            iOS-Version, welche LED-Steuerbox und welche Relais-Boxen, und was du erwartet
             hättest.</p>
 
         <p class="notice"><strong>RGB-Licht nur auf Privatgelände.</strong> Farbiges
             oder animiertes Licht nach vorn ist im öffentlichen Straßenverkehr in
-            Deutschland und vielen anderen Ländern nicht erlaubt. Für die Straße und
-            für Prüfungen gibt es den Stock-Modus.</p>
+            Deutschland und vielen anderen Ländern nicht erlaubt. Auf der Straße
+            schaltest du die Szenen aus: Dann leuchtet die Leiste weiß.</p>
     </section>
 
     <section id="fragen" lang="de">
         <h2>Häufige Fragen</h2>
 
         <h3>Welche Hardware brauche ich?</h3>
-        <p>Nachgerüstete RGB-Lichtleiter in den Scheinwerfern mit einer
-            Bluetooth-LE-Steuerbox der LEDCAR-Bauart. Eine Steuerbox steuert beide
-            Seiten im Gleichlauf. Für den Stock-Modus kommen ein oder zwei
-            Bluetooth-LE-Relais dazu, die die Lichtleiter stromlos schalten. Ohne
-            Steuerbox kannst du alles im Demo-Modus ausprobieren.</p>
+        <p>Nachgerüstete RGB-LED-Leisten in den Scheinwerfern mit einer
+            Bluetooth-LE-LED-Steuerbox der LEDCAR-02-Bauart. Die Steuerbox steuert
+            beide Seiten und hat mit der Zündung immer Strom, auch ohne Handy.
+            Optional kommen zwei Bluetooth-LE-Relais-Boxen dazu (eine je
+            Scheinwerfer): Sie schalten den Blinker zwischen LED-Leiste und
+            Original-Birne um. Bei der Einrichtung findest du zuerst die Steuerbox,
+            danach kannst du die Relais-Boxen koppeln. Ohne Hardware kannst du alles
+            im Demo-Modus ausprobieren.</p>
+
+        <h3>Wie ist die App aufgebaut?</h3>
+        <p>Es gibt einen Bildschirm für dein Licht: oben dein Auto, das jede
+            Änderung sofort zeigt, darunter der Schalter <em>Szenen</em>, die
+            Helligkeit und die Reihe <em>Szenen · Farben · Effekte</em>. <em>Alle ›</em>
+            öffnet die ganze Auswahl. Alles Seltene (Start-Animation, Blinker, Geräte,
+            Widgets, Siri) findest du über das Zahnrad oben rechts unter
+            <em>Einstellungen</em>.</p>
 
         <h3>Was ist der Demo-Modus?</h3>
-        <p>Ein simuliertes Auto mit allen Funktionen: Farben, Effekte, Szenen,
-            Begrüßung, Stock-Modus und OZ Musik. Du startest ihn bei der Einrichtung
-            über <em>Demo starten</em> oder später unter <em>Mehr → Demo-Modus</em>.
-            Im Demo-Modus sendet die App nichts per Bluetooth.</p>
+        <p>Ein simuliertes Auto mit Steuerbox und beiden Relais-Boxen: Szenen,
+            Farben, Effekte, Show-Wechsel, Start-Animation, Nur Originalblinker und
+            Musik. Du startest ihn bei der Einrichtung über <em>Demo starten</em>
+            oder später unter <em>Einstellungen → App → Demo-Modus</em>. Im
+            Demo-Modus sendet die App nichts per Bluetooth.</p>
+
+        <h3>Warum leuchtet die Leiste weiß, wenn „Szenen“ aus ist?</h3>
+        <p>Die LED-Leiste ist dein Tagfahrlicht und wird nie dunkel. <em>Szenen
+            aus</em> heißt weißes Licht mit 100&nbsp;%, <em>Szenen an</em> holt dein
+            letztes Licht zurück. Unter <em>Einstellungen → Nach dem Zünden</em>
+            legst du fest, ob die App nach dem Zünden weißes Licht (Standard) oder
+            dein letztes Licht setzt.</p>
+
+        <h3>Was ist die Start-Animation?</h3>
+        <p>Die Animation, die die Steuerbox selbst bei jeder Zündung abspielt, auch
+            ohne Handy. Unter <em>Einstellungen → Start-Animation</em> wählst du aus
+            den 50 eingebauten Animationen und stellst Farbe, Tempo und Helligkeit
+            ein. Die App sendet das einmal an die Steuerbox; zu sehen ist es beim
+            nächsten Zünden. Die Vorschauen in der App sind gezeichnet und können
+            am Auto etwas anders aussehen.</p>
+
+        <h3>Was ist der Show-Wechsel?</h3>
+        <p>Die Steuerbox wechselt selbst durch die Effekte, auch wenn dein iPhone
+            nicht dabei ist. Markierst du Effekte mit dem Stern, wechselt sie nur
+            durch diese (höchstens 16), sonst durch alle. Du findest ihn in der Reihe
+            <em>Effekte</em> und im Effekt-Blatt.</p>
 
         <h3>Warum fragt OZ LED nach Bluetooth?</h3>
-        <p>Weil die Steuerbox und die Relais nur per Bluetooth erreichbar sind. Die
-            App sendet darüber Steuerbefehle wie Farbe, Helligkeit und Effekt, sonst
-            nichts. Im Hintergrund nutzt sie Bluetooth nur, um sich beim Einschalten
-            der Zündung von selbst wieder zu verbinden. Hast du die Erlaubnis
-            abgelehnt: iOS-<em>Einstellungen → Apps → OZ LED → Bluetooth</em>
-            einschalten.</p>
+        <p>Weil die Steuerbox und die Relais-Boxen nur per Bluetooth erreichbar
+            sind. Die App sendet darüber Steuerbefehle wie Farbe, Helligkeit und
+            Effekt, sonst nichts. Im Hintergrund nutzt sie Bluetooth nur, um sich
+            beim Einschalten der Zündung von selbst wieder zu verbinden. Hast du die
+            Erlaubnis abgelehnt: iOS-<em>Einstellungen → Apps → OZ LED →
+            Bluetooth</em> einschalten.</p>
 
-        <h3>Was macht der Stock-Modus (für TÜV und Straße)?</h3>
-        <p>Ein Tipp schaltet über die Bluetooth-Relais die Lichtleiter stromlos, und
-            das Original-Tagfahrlicht deines Autos arbeitet wie ab Werk. OZ LED
-            bestätigt den Wechsel erst, wenn es selbst sieht, dass die Steuerbox nicht
-            mehr erreichbar ist. Solange der Stock-Modus aktiv ist, sind alle
-            Lichtfunktionen gesperrt, auch über Siri. Zu finden unter
-            <em>Mehr → Geräte</em> beziehungsweise über den Hinweis oben im
-            Bildschirm. Die App ersetzt keine Prüfung: Ob dein Umbau zulässig ist,
-            entscheiden die Prüfstelle und die geltenden Vorschriften.</p>
+        <h3>Was macht „Nur Originalblinker“?</h3>
+        <p>Unter <em>Einstellungen → Blinker</em> schaltest du mit den beiden
+            Relais-Boxen, was blinkt: aus (Standard) die LED-Leiste, an nur die
+            Original-Birne, zum Beispiel für eine Fahrzeugprüfung. Darunter steht
+            der Zustand jeder Seite. Die App setzt deine Wahl bei jeder Zündung
+            wieder, solange das iPhone dabei ist; ohne iPhone stehen die Relais in
+            Ruhe und die LED-Leiste blinkt. Die App ersetzt keine Prüfung: Ob dein
+            Umbau zulässig ist, entscheiden die Prüfstelle und die geltenden
+            Vorschriften.</p>
 
-        <h3>Wie benutze ich Siri und das Kontrollzentrum?</h3>
-        <p>Sag zum Beispiel <em>„OZ Licht an“</em>, <em>„OZ Licht aus“</em>,
-            <em>„OZ Polarlicht abspielen“</em> oder <em>„OZ Stock-Modus“</em>. Alle
-            Befehle findest du auch in der Kurzbefehle-App. Für das Kontrollzentrum
-            hältst du es gedrückt, tippst auf <em>Steuerelement hinzufügen</em> und
-            wählst OZ LED. Ist die Steuerbox nicht verbunden, sagt Siri das, statt
-            still nichts zu tun.</p>
+        <h3>Wie nutze ich Widgets, Siri und das Kontrollzentrum?</h3>
+        <p>Die Widgets für Home- und Sperrbildschirm zeigen deine Favoriten (Stern)
+            und den Schalter <em>Szenen</em>: Home-Bildschirm lange drücken →
+            <em>Bearbeiten → Widgets hinzufügen → OZ LED</em>. Im Kontrollzentrum
+            gibt es <em>OZ Szenen an/aus</em> und <em>OZ Szene starten</em>. Zu Siri
+            sagst du zum Beispiel <em>„OZ Szenen aus“</em> (weißes Licht),
+            <em>„OZ Szenen an“</em>, <em>„OZ Polarlicht abspielen“</em> oder
+            <em>„OZ Nur Originalblinker an“</em>. Alle Befehle stehen auch in der
+            Kurzbefehle-App und unter <em>Einstellungen → Kurzbefehle &amp;
+            Siri</em>. Ist die Steuerbox nicht verbunden, sagt Siri das, statt still
+            nichts zu tun.</p>
 
-        <h3>Was hört OZ Musik mit?</h3>
-        <p>OZ Musik lässt das Licht im Takt spielen. Dafür misst die App über das
-            Mikrofon deines iPhones Lautstärke und Takt, nur solange OZ Musik läuft
-            und die App offen ist. Es wird nichts aufgenommen, gespeichert oder
-            gesendet. Die Mikrofon-Erlaubnis wird erst beim ersten Start von OZ Musik
-            erfragt, und alles andere funktioniert auch ohne sie.</p>
+        <h3>Was hört der Effekt „Musik“ mit?</h3>
+        <p>Mit dem Effekt <em>Musik</em> spielt das Licht im Takt. Dafür misst die
+            App über das Mikrofon deines iPhones Lautstärke und Takt, nur solange
+            der Effekt läuft und die App offen ist. Es wird nichts aufgenommen,
+            gespeichert oder gesendet. Die Mikrofon-Erlaubnis wird erst beim ersten
+            Start von Musik erfragt, und alles andere funktioniert auch ohne
+            sie.</p>
 
         <h3>Darf ich mit Farben fahren?</h3>
         <p>In Deutschland nein, und in vielen anderen Ländern auch nicht. Nach vorn
             ist im Straßenverkehr nur das zugelassene Licht erlaubt. Farben,
-            Effekte, Begrüßung und OZ Musik sind für Privatgelände und Treffen
-            gedacht. Auf der Straße: Stock-Modus. Bediene die App nicht während der
+            Effekte, Show-Wechsel und Musik sind für Privatgelände und Treffen
+            gedacht. Auf der Straße: Szenen aus. Bediene die App nicht während der
             Fahrt.</p>
 
         <h3>„Steuerbox nicht gefunden“: was tun?</h3>
         <ol>
-            <li>Zündung einschalten. Die Steuerbox bekommt meist nur dann Strom.</li>
-            <li>Die App des Herstellers der Steuerbox ganz schließen (aus der
-                App-Übersicht wischen). Die Box nimmt nur eine Verbindung gleichzeitig
-                an.</li>
-            <li>Prüfen, dass der Stock-Modus nicht aktiv ist. Dann ist die Box
-                absichtlich stromlos.</li>
+            <li>Zündung einschalten. Die Steuerbox hat nur mit Zündung Strom.</li>
+            <li>Andere Apps für die Steuerbox oder die Relais ganz schließen (aus der
+                App-Übersicht wischen). LED-Steuerbox und Relais-Boxen nehmen nur eine
+                Verbindung gleichzeitig an.</li>
             <li>Bluetooth am iPhone an und für OZ LED erlaubt?</li>
             <li>Mit dem iPhone näher an die Front gehen und <em>Nochmal suchen</em>
                 tippen.</li>
-            <li>Hilft das nicht: unter <em>Mehr → Geräte → Neu verbinden</em> die Box
-                neu einrichten. Bleibt sie unsichtbar, Stecker und Sicherung der
-                Steuerbox prüfen.</li>
+            <li>Hilft das nicht: unter <em>Einstellungen → LED-Steuerbox → Neu
+                verbinden</em> die Steuerbox neu einrichten. Bleibt sie unsichtbar,
+                Stecker und Sicherung der Steuerbox prüfen.</li>
         </ol>
 
         <h3>Wo sind meine Daten?</h3>
@@ -194,77 +230,111 @@
             Email: help.vaya (at) web (dot) de<br>
             Please start the subject with “OZ LED”.
         </address>
-        <p>Useful but not required: which iPhone, which iOS version, which
-            controller box and relays, and what you expected to happen.</p>
+        <p>Useful but not required: which iPhone, which iOS version, which LED
+            controller and relay boxes, and what you expected to happen.</p>
 
         <p class="notice"><strong>RGB light on private property only.</strong>
             Colored or animated forward-facing light is not allowed on public roads in
-            Germany and many other countries. Use stock mode for the road and for
-            inspections.</p>
+            Germany and many other countries. On the road, turn scenes off: the strip
+            then glows white.</p>
 
         <h3>Which hardware do I need?</h3>
-        <p>Retrofitted RGB light guides in the headlights with an LEDCAR-type
-            Bluetooth LE controller box. One controller drives both sides in sync. For
-            stock mode, add one or two Bluetooth LE relays that cut power to the light
-            guides. Without a controller you can try everything in demo mode.</p>
+        <p>Retrofitted RGB LED strips in the headlights with a Bluetooth LE LED
+            controller of the LEDCAR-02 type. The controller drives both sides and
+            always has power with the ignition, even without a phone. Optionally, add
+            two Bluetooth LE relay boxes (one per headlight): they switch the turn
+            signal between the LED strip and the original bulb. During setup you find
+            the controller first and can then pair the relay boxes. Without hardware
+            you can try everything in demo mode.</p>
+
+        <h3>How is the app organized?</h3>
+        <p>One screen for your light: your car at the top, showing every change
+            right away, then the <em>Scenes</em> switch, brightness and the row
+            <em>Scenes · Colors · Effects</em>. <em>All ›</em> opens the full choice.
+            Everything you need less often (welcome animation, turn signal, devices,
+            widgets, Siri) is behind the gear at the top right, under
+            <em>Settings</em>.</p>
 
         <h3>What is demo mode?</h3>
-        <p>A simulated car with every feature: colors, effects, scenes, welcome
-            animations, stock mode and OZ Musik. Start it during setup with <em>Demo
-            starten</em> (Start demo) or later under <em>Mehr → Demo-Modus</em>
-            (More → Demo mode). In demo mode the app sends nothing over Bluetooth.</p>
+        <p>A simulated car with the controller and both relay boxes: scenes, colors,
+            effects, show cycle, welcome animation, original turn signals only and
+            Music. Start it during setup with <em>Start demo</em> or later under
+            <em>Settings → App → Demo mode</em>. In demo mode the app sends nothing
+            over Bluetooth.</p>
+
+        <h3>Why does the strip glow white when “Scenes” is off?</h3>
+        <p>The LED strip is your daytime running light and never goes dark.
+            <em>Scenes off</em> means white light at 100&nbsp;%, <em>Scenes on</em>
+            brings back your last light. Under <em>Settings → After ignition</em> you
+            choose whether the app sets white light (default) or your last light after
+            ignition.</p>
+
+        <h3>What is the welcome animation?</h3>
+        <p>The animation the controller plays by itself at every ignition, even
+            without a phone. Under <em>Settings → Welcome animation</em> you choose
+            one of the 50 built-in animations and set color, speed and brightness. The
+            app sends this to the controller once; you see it the next time you start
+            the car. The previews in the app are drawn and may look a little different
+            on the car.</p>
+
+        <h3>What is the show cycle?</h3>
+        <p>The controller cycles through effects by itself, even when your iPhone
+            isn’t there. If you star effects, it cycles through those only (up to 16),
+            otherwise through all of them. You find it in the <em>Effects</em> row and
+            in the effect sheet.</p>
 
         <h3>Why does OZ LED ask for Bluetooth?</h3>
-        <p>The controller box and relays can only be reached over Bluetooth. The app
-            sends control commands such as color, brightness and effect, nothing else.
-            In the background it uses Bluetooth only to reconnect when the ignition is
-            switched on. If you declined: iOS <em>Settings → Apps → OZ LED →
-            Bluetooth</em>.</p>
+        <p>The controller and the relay boxes can only be reached over Bluetooth.
+            The app sends control commands such as color, brightness and effect,
+            nothing else. In the background it uses Bluetooth only to reconnect when
+            the ignition is switched on. If you declined: iOS <em>Settings → Apps → OZ
+            LED → Bluetooth</em>.</p>
 
-        <h3>What does stock mode do (for inspections and the road)?</h3>
-        <p>One tap uses the Bluetooth relays to cut power to the light guides, so your
-            car’s original daytime running lights work as from the factory. OZ LED
-            only confirms the switch once it can see that the controller is no longer
-            reachable. While stock mode is active, all light features are locked,
-            including Siri. Find it under <em>More → Devices</em> or via the notice at
-            the top of the screen. The app does not replace an inspection: whether your
-            modification is permitted is decided by the inspection body and local
-            regulations.</p>
+        <h3>What does “Original turn signals only” do?</h3>
+        <p>Under <em>Settings → Turn signal</em> the two relay boxes switch what
+            flashes: off (default) the LED strip, on only the original bulb, for
+            example for a vehicle inspection. The state of each side is shown below.
+            The app sets your choice again at every ignition while the iPhone is in
+            the car; without the iPhone the relays rest and the LED strip flashes. The
+            app does not replace an inspection: whether your modification is permitted
+            is decided by the inspection body and local regulations.</p>
 
-        <h3>How do I use Siri and Control Center?</h3>
-        <p>Say for example <em>“OZ Licht an”</em> (light on), <em>“OZ Licht
-            aus”</em> (light off), <em>“OZ Polarlicht abspielen”</em> (play a scene)
-            or <em>“OZ Stock-Modus”</em>. All commands are also in the Shortcuts app.
-            For Control Center, touch and hold it, tap <em>Add a Control</em> and
-            choose OZ LED. If the controller is not connected, Siri tells you instead
-            of silently doing nothing.</p>
+        <h3>How do I use widgets, Siri and Control Center?</h3>
+        <p>The Home Screen and Lock Screen widgets show your favorites (star) and the
+            <em>Scenes</em> switch: touch and hold the Home Screen → <em>Edit → Add
+            Widget → OZ LED</em>. In Control Center you can add <em>OZ Scenes
+            on/off</em> and <em>Start OZ scene</em>. Ask Siri for example <em>“OZ LED
+            scenes off”</em> (white light), <em>“OZ LED scenes on”</em>, <em>“Play
+            Aurora in OZ LED”</em> or <em>“OZ LED original turn signals on”</em>. All
+            commands are also in the Shortcuts app and under <em>Settings → Shortcuts
+            &amp; Siri</em>. If the controller is not connected, Siri tells you
+            instead of silently doing nothing.</p>
 
-        <h3>What does OZ Musik listen to?</h3>
-        <p>OZ Musik makes the light play to the beat. To do this, the app measures
-            loudness and beat through your iPhone’s microphone, only while OZ Musik is
-            running and the app is open. Nothing is recorded, stored or sent. Microphone
-            permission is requested the first time you start OZ Musik, and everything
-            else works without it.</p>
+        <h3>What does the Music effect listen to?</h3>
+        <p>With the <em>Music</em> effect the light plays to the beat. To do this,
+            the app measures loudness and beat through your iPhone’s microphone, only
+            while the effect is running and the app is open. Nothing is recorded,
+            stored or sent. Microphone permission is requested the first time you
+            start Music, and everything else works without it.</p>
 
         <h3>May I drive with colors on?</h3>
         <p>Not in Germany, and not in many other countries either. Only approved
-            lighting is allowed to the front on public roads. Colors, effects, welcome
-            animations and OZ Musik are meant for private property and meets. On the
-            road: stock mode. Do not operate the app while driving.</p>
+            lighting is allowed to the front on public roads. Colors, effects, the
+            show cycle and Music are meant for private property and meets. On the
+            road: scenes off. Do not operate the app while driving.</p>
 
         <h3>“Controller not found”: what now?</h3>
         <ol>
-            <li>Switch the ignition on. The controller usually only has power then.</li>
-            <li>Fully close the controller manufacturer’s own app (swipe it away in the
-                app switcher). The box accepts only one connection at a time.</li>
-            <li>Check that stock mode is not active. In that case the box is
-                deliberately without power.</li>
+            <li>Switch the ignition on. The controller only has power with the
+                ignition on.</li>
+            <li>Fully close any other app for the controller or the relays (swipe it
+                away in the app switcher). The controller and relay boxes accept only
+                one connection at a time.</li>
             <li>Is Bluetooth on and allowed for OZ LED?</li>
-            <li>Move closer to the front of the car and tap <em>Nochmal suchen</em>
-                (Search again).</li>
-            <li>Still nothing: set the box up again under <em>More → Devices →
-                Reconnect</em>. If it stays invisible, check the controller’s plug and
-                fuse.</li>
+            <li>Move closer to the front of the car and tap <em>Search again</em>.</li>
+            <li>Still nothing: set the controller up again under <em>Settings → LED
+                controller → Reconnect</em>. If it stays invisible, check the
+                controller’s plug and fuse.</li>
         </ol>
 
         <h3>Where is my data?</h3>

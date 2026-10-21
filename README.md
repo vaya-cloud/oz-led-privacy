@@ -65,8 +65,8 @@ enum LegalContent {
 }
 ```
 
-Dazu `docs/appstore/appstore-eintraege.md` §7 und §8 anpassen: Die Platzhalter
-`ozled.de/datenschutz` und `ozled.de/hilfe` werden durch diese URLs ersetzt.
+Dieselben Werte stehen in `docs/appstore/appstore-eintraege.md` §7–§8 und in
+`App/OZLED/Einstellungen/RechtlichesView.swift` (`LegalContent`).
 
 ## Die Mailadresse steht absichtlich zerlegt
 
@@ -84,22 +84,37 @@ ASO-Spam angezogen. In der App bleibt die Adresse ein `mailto:`-Link
 - Vor jedem Release gegenprüfen, dass vier Dinge dasselbe sagen: diese Seiten,
   `LegalContent` und der Datentext in der App, `PrivacyInfo.xcprivacy` und die Antwort
   „Data Not Collected“ in App Store Connect. Kommt eine Funktion mit Netzwerk, Kamera
-  (geplant: „Farbe aus der Kamera“) oder anderen Daten dazu, müssen Seite, Manifest und
+  oder anderen Daten dazu, müssen Seite, Manifest und
   App Privacy **vor** dem Upload angepasst werden.
 
 ## Was die Seiten behaupten und worauf das beruht
 
-Die Seiten beschreiben den Stand vom 16. Oktober 2026:
+Die Seiten beschreiben den Stand vom 20. Oktober 2026 (M6, LEDCAR-02):
 
-- Bluetooth LE nur zur eigenen Steuerbox und zu den Relais; `bluetooth-central` im
+- **Hardware:** eine Bluetooth-LE-LED-Steuerbox (LEDCAR-02-Bauart), mit der Zündung immer an,
+  auch ohne Handy; optional zwei Relais-Boxen (DSD), die den Blinker zwischen LED-Leiste und
+  Original-Birne umschalten („Nur Originalblinker“). Es gibt keine Lichtmodi „Stock“/„LED-Band“
+  mehr.
+- **Bedienung:** ein Hauptbildschirm, Einstellungen über das Zahnrad; Start-Animation (51
+  eingebaut, gezeichnete Vorschau) und Show-Wechsel laufen in der Steuerbox.
+- **Bluetooth LE** nur zur eigenen Steuerbox und zu den Relais-Boxen; `bluetooth-central` im
   Hintergrund nur zum Wiederverbinden bei Zündung.
-- Mikrofon nur während OZ Musik, nur im Vordergrund, Auswertung im Arbeitsspeicher, nichts
-  wird gespeichert oder gesendet. Laut `OZLED-Info.plist` und `MusikMikrofon.swift` ist es
-  das **iPhone**-Mikrofon. Die Store-Beschreibung in `appstore-eintraege.md` spricht noch
-  vom Mikrofon des Controllers; das muss angeglichen werden.
-- Siri, Kurzbefehle und das Kontrollzentrum laufen lokal über App Intents.
+- **Mikrofon** nur während des Effekts „Musik“, nur im Vordergrund, Auswertung im
+  Arbeitsspeicher, nichts wird gespeichert oder gesendet. Es ist das **iPhone**-Mikrofon; die
+  Takt-Quelle „Steuerbox“ gibt es nur in der versteckten Spotify-Beta und wird nicht beworben.
+- **Spotify:** Das offizielle Spotify iOS SDK ist eingebunden, die Funktion aber standardmäßig
+  ausgeblendet (Beta). Die Datenschutzseite nennt das ehrlich; Store-Texte und Prüfhinweise
+  nennen Spotify nicht, solange es versteckt ist.
+- **Siri, Kurzbefehle, Widgets (Home, Sperrbildschirm) und Kontrollzentrum** laufen lokal über
+  App Intents/WidgetKit.
 - SwiftData und UserDefaults liegen in der App Group `group.de.ozled.app` auf dem Gerät.
-- Kein Konto, kein Server, kein Netzwerkcode, keine Analyse, keine Werbung, keine
-  Fremdbibliotheken.
+- Kein Konto, kein Server, kein eigener Netzwerkcode, keine Analyse, keine Werbung, keine
+  Kamera.
 
 Ändert sich davon etwas, stimmt die Seite nicht mehr.
+
+## Veröffentlichen (Stand 20.10.)
+
+Denis hat am 20.10. freigegeben, die aktualisierten Seiten `index.html` und `support.html`
+ins Pages-Repo `vaya-cloud/oz-led-privacy` hochzuladen (nur diese zwei Dateien). Danach beide
+URLs aufrufen und die Sprungziele prüfen.
